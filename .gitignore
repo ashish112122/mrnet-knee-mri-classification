@@ -1,0 +1,40 @@
+# Dataset and cached volumes (not to be redistributed)
+*.npy
+*.parquet
+data/
+cache/
+
+# Model checkpoints
+*.pt
+*.pth
+checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Colab / Drive artefacts
+*.json
+drive/

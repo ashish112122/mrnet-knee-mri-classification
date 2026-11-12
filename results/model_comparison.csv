@@ -1,0 +1,12 @@
+experiment,model,views,pooling,label,roc_auc,avg_precision,accuracy,precision,recall,specificity,f1
+1,ResNet18 Sagittal Mean,sagittal,mean,abnormal,0.897,0.964,0.874,0.935,0.958,,0.897
+1,ResNet18 Sagittal Mean,sagittal,mean,acl,0.879,0.859,0.824,0.905,0.944,,0.750
+1,ResNet18 Sagittal Mean,sagittal,mean,meniscus,0.747,0.682,0.664,0.588,0.769,,0.617
+2,ResNet18 Sagittal Attention MIL,sagittal,attention,abnormal,0.911,0.974,0.899,0.928,0.947,,0.938
+2,ResNet18 Sagittal Attention MIL,sagittal,attention,acl,0.879,0.859,0.756,0.838,0.574,,0.681
+2,ResNet18 Sagittal Attention MIL,sagittal,attention,meniscus,0.757,0.713,0.697,0.690,0.558,,0.617
+3,ResNet18 Three-View Mean,sagittal+coronal+axial,mean+concat,abnormal,0.911,0.974,0.899,0.928,0.947,,0.938
+3,ResNet18 Three-View Mean,sagittal+coronal+axial,mean+concat,acl,0.879,0.859,0.756,0.838,0.574,,0.681
+3,ResNet18 Three-View Mean,sagittal+coronal+axial,mean+concat,meniscus,0.757,0.713,0.697,0.690,0.558,,0.617
+4,TripleMRNet AlexNet Three-Plane,sagittal+coronal+axial,mean+concat,abnormal,0.927,0.977,0.866,0.976,0.853,0.917,0.919
+4,TripleMRNet AlexNet Three-Plane,sagittal+coronal+axial,mean+concat,acl,0.881,0.881,0.782,0.726,0.833,0.739,0.776
