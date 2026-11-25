@@ -1,3 +1,4 @@
+
 # PROJECT REPORT
 
 **[University/Institute Name]**  
@@ -143,11 +144,9 @@ stored as NumPy arrays of shape `(num_slices, H, W)`.
 **Target variable:** Three independent binary labels per exam (abnormal, acl,
 meniscus).
 
-**[INSERT: Label distribution bar chart from Notebook 01 — Training Label
-Distribution figure]**
+**[INSERT: Screenshot of Training Label Distribution bar chart from Notebook 01]**
 
-**[INSERT: Sample MRI slice visualisation from Notebook 01 — showing one exam
-across sagittal, coronal, and axial planes]**
+**[INSERT: Screenshot of sample MRI slice visualisation from Notebook 01 — sagittal, coronal, axial]**
 
 The dataset is provided under a research use agreement. The raw MRI volumes are not
 included in the project repository.
@@ -279,10 +278,9 @@ The general pipeline for all experiments:
 | `04_triplemrnet_alexnet_three_plane.ipynb` | Experiment 4 (final model) |
 | `05_results_and_plots.ipynb` | Evaluation plots |
 
-**[INSERT: Screenshot of Colab notebook running — showing training output / GPU
-usage]**
+**[INSERT: Screenshot of Colab notebook running]**
 
-**[INSERT: Screenshot of Google Drive showing saved checkpoints folder]**
+**[INSERT: Screenshot of Google Drive checkpoints folder]**
 
 ### Key Code Snippet — Attention MIL Module
 
@@ -319,7 +317,7 @@ class TripleMRNet(nn.Module):
 
 ### 7.1 Training Loss Curves
 
-**[INSERT: training_loss_curves.png]**
+*(Figure: `figures/training_loss_curves.png`)*
 
 Training loss decreased consistently across all experiments. Experiment 4 was
 trained for 10 epochs (versus 3 for Experiments 1–3), reflecting the additional
@@ -346,7 +344,7 @@ complexity of fine-tuning three AlexNet backbones per task.
 
 ### 7.3 ROC Curves
 
-**[INSERT: roc_curves_all_experiments.png]**
+*(Figure: `figures/roc_curves_all_experiments.png`)*
 
 The ROC curves confirm the ranking seen in Table 1. Abnormality detection is the
 easiest task across all models, likely because general abnormalities manifest as
@@ -357,16 +355,11 @@ remains the hardest task across all experiments.
 
 ### 7.4 Precision-Recall Curves
 
-**[INSERT: pr_curves_all_experiments.png]**
-
-The precision-recall curves reflect the class imbalance in the dataset. The high
-average precision (0.977) for abnormality in Experiment 4 indicates the model
-achieves strong precision even at high recall thresholds. The lower average precision
-for meniscus (0.739) highlights the difficulty of this task.
+*(Not included in report — see `figures/pr_curves_all_experiments.png` for PPT use.)*
 
 ### 7.5 Confusion Matrices
 
-**[INSERT: confusion_matrices_exp4.png]**
+*(Figure: `figures/confusion_matrices_exp4.png`)*
 
 For the final model (Experiment 4) at a 0.5 decision threshold:
 - **Abnormality:** 2 false positives, 14 false negatives out of 119 exams
@@ -379,7 +372,7 @@ false negatives are more costly than false positives.
 
 ### 7.6 Cross-Experiment Comparison
 
-**[INSERT: model_comparison_bar_charts.png]**
+*(Figure: `figures/model_comparison_bar_charts.png`)*
 
 Key observations from the comparison:
 

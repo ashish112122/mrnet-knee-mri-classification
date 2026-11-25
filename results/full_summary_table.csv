@@ -1,0 +1,13 @@
+experiment,label,roc_auc,f1,accuracy,precision,recall
+Exp1 Baseline,abnormal,0.897,0.897,0.874,0.935,0.958
+Exp1 Baseline,acl,0.879,0.75,0.824,0.905,0.944
+Exp1 Baseline,meniscus,0.747,0.617,0.664,0.588,0.769
+Exp2 Attention,abnormal,0.886,0.914,0.857,0.882,0.947
+Exp2 Attention,acl,0.864,0.679,0.58,0.52,0.981
+Exp2 Attention,meniscus,0.745,0.657,0.597,0.523,0.885
+Exp3 Three-View,abnormal,0.911,0.938,0.899,0.928,0.947
+Exp3 Three-View,acl,0.879,0.681,0.756,0.838,0.574
+Exp3 Three-View,meniscus,0.757,0.617,0.697,0.69,0.558
+Exp4 AlexNet,abnormal,0.927,0.91,0.866,0.976,0.853
+Exp4 AlexNet,acl,0.881,0.776,0.782,0.726,0.833
+Exp4 AlexNet,meniscus,0.784,0.698,0.681,0.595,0.846
